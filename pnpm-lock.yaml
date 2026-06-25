@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 overrides:
   testem: ~3.17.0
@@ -3843,7 +3843,7 @@ packages:
       through2: 3.0.2
     dev: true
 
-  /consolidate/0.16.0_lodash@4.18.1+mustache@4.2.0:
+  /consolidate/0.16.0_5rdkfsc3tyxx5xtaio6jmj7v4u:
     resolution: {integrity: sha512-Nhl1wzCslqXYTJVDyJCu3ODohy9OfBMB5uD2BiBTzd7w+QY0lBzafkR8y8755yMYHAaMD4NuzbAw03/xzfw+eQ==}
     engines: {node: '>= 0.10.0'}
     deprecated: Please upgrade to consolidate v1.0.0+ as it has been modernized with several long-awaited fixes implemented. Maintenance is supported by Forward Email at https://forwardemail.net ; follow/watch https://github.com/ladjs/consolidate for updates and release changelog
@@ -9670,7 +9670,7 @@ packages:
       charm: 1.0.2
       commander: 2.20.3
       compression: 1.8.1
-      consolidate: 0.16.0_lodash@4.18.1+mustache@4.2.0
+      consolidate: 0.16.0_5rdkfsc3tyxx5xtaio6jmj7v4u
       execa: 1.0.0
       express: 4.22.2
       fireworm: 0.7.2

@@ -11,7 +11,7 @@
     "test:all": "ember try:each"
   },
   "engines": {
-    "node": "12.* || 14.* || >= 16"
+    "node": "14.* || >= 16"
   },
   "devDependencies": {
     "@ember/jquery": "^1.1.0",
@@ -63,5 +63,5 @@
       "testem": "~3.17.0"
     }
   },
-  "packageManager": "pnpm@6.35.1+sha512.3ede4912357625239102ac3f5ed8df178937e0f050169a95de450c1584a5cab589b22a391ebde5ab2da8264a69accad56cec8126cc577d90d03a5be6cad22b80"
+  "packageManager": "pnpm@7.33.7+sha512.7afe2410642b39c698df46da4ce5c7231a5cce360698d69f8cf8f42257d40b3e43f231053b07b8de849fd4ffbf4a71ff57b835137777a352388f3d3da747200e"
 }
