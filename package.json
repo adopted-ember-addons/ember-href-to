@@ -45,9 +45,9 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/intercom/ember-href-to",
+  "repository": "https://github.com/adopted-ember-addons/ember-href-to",
   "license": "Apache-2.0",
-  "author": "Intercom",
+  "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
