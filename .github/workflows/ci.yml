@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   lint:
-    name: "Tests"
+    name: "Lint"
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -40,7 +40,7 @@ jobs:
           node-version: 12
           cache: pnpm
       - run: pnpm install
-      - run: pnpm run test:ember
+      - run: pnpm run test
 
   floating:
     name: "Floating Dependencies"
@@ -55,7 +55,7 @@ jobs:
           node-version: 12
           cache: pnpm
       - run: pnpm install --no-lockfile
-      - run: pnpm run test:ember
+      - run: pnpm run test
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
