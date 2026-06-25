@@ -25,7 +25,8 @@ jobs:
           node-version: 12
           cache: pnpm
       - run: pnpm install
-      - run: pnpm run lint
+      - run: pnpm run lint:js
+      - run: pnpm run lint:hbs
 
   test:
     name: "Tests"
