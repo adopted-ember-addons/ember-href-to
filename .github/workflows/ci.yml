@@ -69,6 +69,8 @@ jobs:
       matrix:
         try-scenario:
           - ember-3.20
+          - ember-3.24
+          - ember-3.28
           - ember-release
           - ember-beta
           - ember-canary
