@@ -9,7 +9,6 @@ specifiers:
   ember-cli: ~3.20.0
   ember-cli-babel: ^7.26.6
   ember-cli-dependency-checker: ^3.2.0
-  ember-cli-eslint: 5.1.0
   ember-cli-htmlbars: ^4.3.1
   ember-cli-inject-live-reload: ^2.0.2
   ember-cli-release: ^0.2.9
@@ -25,6 +24,7 @@ specifiers:
   ember-source-channel-url: ^3.0.0
   ember-template-lint: ~2.4.1
   ember-try: ^1.4.0
+  eslint: '5'
   eslint-plugin-ember: ^7.13.0
   eslint-plugin-node: ^11.1.0
   loader.js: ^4.7.0
@@ -41,7 +41,6 @@ devDependencies:
   broccoli-asset-rev: 3.0.0
   ember-cli: 3.20.0
   ember-cli-dependency-checker: 3.2.0
-  ember-cli-eslint: 5.1.0
   ember-cli-htmlbars: 4.3.1
   ember-cli-inject-live-reload: 2.0.2
   ember-cli-release: 0.2.9
@@ -57,8 +56,9 @@ devDependencies:
   ember-source-channel-url: 3.0.0
   ember-template-lint: 2.4.1
   ember-try: 1.4.0
+  eslint: 5.16.0
   eslint-plugin-ember: 7.13.0
-  eslint-plugin-node: 11.1.0
+  eslint-plugin-node: 11.1.0_eslint@5.16.0
   loader.js: 4.7.0
   qunit-dom: 1.4.0
 
@@ -1660,12 +1660,6 @@ packages:
       - supports-color
     dev: true
 
-  /aot-test-generators/0.1.0:
-    resolution: {integrity: sha512-PKyBQsPgkrCbUZS0PexdnyS3pVfYe4U1dLLQOf3is5RcYSaxbA7fsnnj6i8hcubsz+iS0miGPSJlONv/tXjfiA==}
-    dependencies:
-      jsesc: 2.5.2
-    dev: true
-
   /aproba/1.2.0:
     resolution: {integrity: sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==}
     dev: true
@@ -2731,26 +2725,6 @@ packages:
       - supports-color
     dev: true
 
-  /broccoli-concat/3.7.3:
-    resolution: {integrity: sha512-2Ma9h81EJ0PRb9n4sW0i8KZlcnpTQfKxcj87zvi5DFe1fd8CTDEdseHDotK2beuA2l+LbgVPfd8EHaBJKm/Y8g==}
-    engines: {node: '>= 4'}
-    dependencies:
-      broccoli-debug: 0.6.5
-      broccoli-kitchen-sink-helpers: 0.3.1
-      broccoli-plugin: 1.3.1
-      ensure-posix-path: 1.1.1
-      fast-sourcemap-concat: 1.4.0
-      find-index: 1.1.0
-      fs-extra: 4.0.3
-      fs-tree-diff: 0.5.9
-      lodash.merge: 4.6.2
-      lodash.omit: 4.5.0
-      lodash.uniq: 4.5.0
-      walk-sync: 0.3.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /broccoli-concat/4.2.4:
     resolution: {integrity: sha512-NgdBIE57r+U/AslBohQr0mCS7PopIWL8dihMI1CzqffQkisAgqWMuddjYmizqRBQlml7crBFaBeUnPDHhf4/RQ==}
     engines: {node: 10.* || >= 12.*}
@@ -2900,21 +2874,6 @@ packages:
     dependencies:
       glob: 5.0.15
       mkdirp: 0.5.5
-
-  /broccoli-lint-eslint/5.0.0:
-    resolution: {integrity: sha512-V7M6U4th21bf1X4u3KoZa0xkcPq9JCSyKxB/nCWCBFMI3rkrB8nlyDLd8DKIUTqL+ojlFOGV5lohPZwndw0sZw==}
-    engines: {node: 6.* || 8.* || >= 10.*}
-    dependencies:
-      aot-test-generators: 0.1.0
-      broccoli-concat: 3.7.3
-      broccoli-persistent-filter: 2.3.1
-      eslint: 5.16.0
-      json-stable-stringify: 1.0.1
-      lodash.defaultsdeep: 4.6.1
-      md5-hex: 2.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   /broccoli-merge-trees/1.2.4:
     resolution: {integrity: sha512-RXJAleytlED0dxXGEo2EXwrg5cCesY8LQzzGRogwGQmluoz+ijzxajpyWAW6wu/AyuQZj1vgnIqnld8jvuuXtQ==}
@@ -4243,19 +4202,6 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-eslint/5.1.0:
-    resolution: {integrity: sha512-o6787b0tgkRNp+KJo5BiQxtkLuz/yyYqVWF31LPrh+ZCC8jETrfyjsuk8VPDxKLGq7qEiQNJUgOEW87HTad7Vg==}
-    engines: {node: 6.* || 8.* || >= 10.*}
-    deprecated: 'Call eslint directly instead: https://github.com/emberjs/rfcs/blob/master/text/0121-remove-ember-cli-eslint.md'
-    dependencies:
-      broccoli-lint-eslint: 5.0.0
-      ember-cli-version-checker: 3.1.3
-      rsvp: 4.8.5
-      walk-sync: 1.1.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /ember-cli-get-component-path-option/1.0.0:
     resolution: {integrity: sha512-k47TDwcJ2zPideBCZE8sCiShSxQSpebY2BHcX2DdipMmBox5gsfyVrbKJWIHeSTTKyEUgmBIvQkqTOozEziCZA==}
     dev: true
@@ -5033,23 +4979,25 @@ packages:
       snake-case: 3.0.3
     dev: true
 
-  /eslint-plugin-es/3.0.1:
+  /eslint-plugin-es/3.0.1_eslint@5.16.0:
     resolution: {integrity: sha512-GUmAsJaN4Fc7Gbtl8uOBlayo2DqhwWvEzykMHSCZHU3XdJ+NSzzZcVhXh3VxX5icqQ+oQdIEawXX8xkR3mIFmQ==}
     engines: {node: '>=8.10.0'}
     peerDependencies:
       eslint: '>=4.19.1'
     dependencies:
+      eslint: 5.16.0
       eslint-utils: 2.1.0
       regexpp: 3.1.0
     dev: true
 
-  /eslint-plugin-node/11.1.0:
+  /eslint-plugin-node/11.1.0_eslint@5.16.0:
     resolution: {integrity: sha512-oUwtPJ1W0SKD0Tr+wqu92c5xuCeQqB3hSCHasn/ZgjFdA9iDGNkNf2Zi9ztY7X+hNuMib23LNGRm6+uN+KLE3g==}
     engines: {node: '>=8.10.0'}
     peerDependencies:
       eslint: '>=5.16.0'
     dependencies:
-      eslint-plugin-es: 3.0.1
+      eslint: 5.16.0
+      eslint-plugin-es: 3.0.1_eslint@5.16.0
       eslint-utils: 2.1.0
       ignore: 5.1.8
       minimatch: 3.0.4
@@ -5372,22 +5320,6 @@ packages:
     resolution: {integrity: sha512-MxBW4URybFszOx1YlACEoK52P6lE3xiFcPaGCUZ7QQOZ6uJXKo++Se8wa31SjcZ+NC/fdAWX7UtKEfaGgHS2Vg==}
     dependencies:
       blank-object: 1.0.2
-
-  /fast-sourcemap-concat/1.4.0:
-    resolution: {integrity: sha512-x90Wlx/2C83lfyg7h4oguTZN4MyaVfaiUSJQNpU+YEA0Odf9u659Opo44b0LfoVg9G/bOE++GdID/dkyja+XcA==}
-    engines: {node: '>= 4'}
-    dependencies:
-      chalk: 2.4.2
-      fs-extra: 5.0.0
-      heimdalljs-logger: 0.1.10
-      memory-streams: 0.1.3
-      mkdirp: 0.5.5
-      source-map: 0.4.4
-      source-map-url: 0.3.0
-      sourcemap-validator: 1.1.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   /fast-sourcemap-concat/2.1.0:
     resolution: {integrity: sha512-L9uADEnnHOeF4U5Kc3gzEs3oFpNCFkiTJXvT+nKmR0zcFqHZJJbszWT7dv4t9558FJRGpCj8UxUpTgz2zwiIZA==}
@@ -6762,12 +6694,6 @@ packages:
     hasBin: true
     dev: true
 
-  /jsesc/2.5.2:
-    resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
-    engines: {node: '>=4'}
-    hasBin: true
-    dev: true
-
   /jsesc/3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
@@ -7387,17 +7313,6 @@ packages:
     dependencies:
       '@types/minimatch': 3.0.3
       minimatch: 3.0.4
-
-  /md5-hex/2.0.0:
-    resolution: {integrity: sha512-0HLfzJTZ7707VBNM1ydr5sTb+IZLhmU4u2TVA+Eenfn/Ed42/gn10smbAPiuEm/jNgjvWKUiMNihqJQ6flus9w==}
-    engines: {node: '>=4'}
-    dependencies:
-      md5-o-matic: 0.1.1
-    dev: true
-
-  /md5-o-matic/0.1.1:
-    resolution: {integrity: sha512-QBJSFpsedXUl/Lgs4ySdB2XCzUEcJ3ujpbagdZCkRaYIaC0kFnID8jhc84KEiVv6dNFtIrmW7bqow0lDxgJi6A==}
-    dev: true
 
   /mdurl/1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
