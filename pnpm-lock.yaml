@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 overrides:
   testem: ~3.2.0
+  quick-temp: 0.1.8
 
 specifiers:
   '@ember/jquery': ^1.1.0
