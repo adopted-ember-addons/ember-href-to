@@ -1,0 +1,22 @@
+{
+  "solution": {
+    "ember-href-to": {
+      "impact": "minor",
+      "oldVersion": "5.0.6",
+      "newVersion": "5.1.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2026-06-29)\n\n* ember-href-to 5.1.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-href-to`\n  * [#1](https://github.com/adopted-ember-addons/ember-href-to/pull/1) Update package.json repository URL and author ([@patocallaghan](https://github.com/patocallaghan))\n\n#### :house: Internal\n* `ember-href-to`\n  * [#4](https://github.com/adopted-ember-addons/ember-href-to/pull/4) start using release-plan ([@mansona](https://github.com/mansona))\n  * [#2](https://github.com/adopted-ember-addons/ember-href-to/pull/2) swap to pnpm and re-enable CI ([@mansona](https://github.com/mansona))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Pat O'Callaghan ([@patocallaghan](https://github.com/patocallaghan))\n"
+}
