@@ -2,16 +2,26 @@
   "name": "ember-href-to",
   "version": "5.0.6",
   "description": "A lightweight alternative to `{{link-to}}`",
+  "keywords": [
+    "ember-addon"
+  ],
+  "repository": "https://github.com/adopted-ember-addons/ember-href-to",
+  "license": "Apache-2.0",
+  "author": "",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
   "scripts": {
+    "build": "ember build",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "build": "ember build",
     "test:all": "ember try:each"
   },
-  "engines": {
-    "node": "12.* || 14.* || >= 16"
+  "dependencies": {
+    "ember-cli-babel": "^7.26.6"
   },
   "devDependencies": {
     "@ember/jquery": "^1.1.0",
@@ -40,29 +50,20 @@
     "eslint-plugin-ember": "^7.13.0",
     "eslint-plugin-node": "^11.1.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^1.4.0"
+    "qunit-dom": "^1.4.0",
+    "release-plan": "^0.18.0"
   },
-  "keywords": [
-    "ember-addon"
-  ],
-  "repository": "https://github.com/adopted-ember-addons/ember-href-to",
-  "license": "Apache-2.0",
-  "author": "",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
-  "dependencies": {
-    "ember-cli-babel": "^7.26.6"
-  },
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
+  "packageManager": "pnpm@6.35.1+sha512.3ede4912357625239102ac3f5ed8df178937e0f050169a95de450c1584a5cab589b22a391ebde5ab2da8264a69accad56cec8126cc577d90d03a5be6cad22b80",
+  "engines": {
+    "node": "12.* || 14.* || >= 16"
   },
   "pnpm": {
     "overrides": {
-      "testem": "~3.2.0",
-      "quick-temp": "0.1.8"
+      "quick-temp": "0.1.8",
+      "testem": "~3.2.0"
     }
   },
-  "packageManager": "pnpm@6.35.1+sha512.3ede4912357625239102ac3f5ed8df178937e0f050169a95de450c1584a5cab589b22a391ebde5ab2da8264a69accad56cec8126cc577d90d03a5be6cad22b80"
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  }
 }
