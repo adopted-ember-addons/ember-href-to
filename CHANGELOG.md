@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2026-06-30)
+
+* ember-href-to 5.1.1 (patch)
+
+#### :house: Internal
+* `ember-href-to`
+  * [#6](https://github.com/adopted-ember-addons/ember-href-to/pull/6) Remove Intercom reference from LICENSE ([@patocallaghan](https://github.com/patocallaghan))
+
+#### Committers: 1
+- Pat O'Callaghan ([@patocallaghan](https://github.com/patocallaghan))
+
 ## Release (2026-06-29)
 
 * ember-href-to 5.1.0 (minor)
